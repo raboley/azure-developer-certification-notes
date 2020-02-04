@@ -2,11 +2,11 @@
 
 ## Create Azure App Service Web Apps
 
-* create an Azure App Service Web App
-* enable diagnostics logging
-* deploy code to a web app
-* configure web app settings
-* implement autoscaling rules (schedule, operational/system metrics)
+### create an Azure App Service Web App
+### enable diagnostics logging
+### deploy code to a web app
+### configure web app settings
+### implement autoscaling rules (schedule, operational/system metrics)
 
 ## Implement Azure functions
 
@@ -57,6 +57,11 @@ az functionapp create \
 
 When using this publish any functions already present are stopped and deleted before the new version is deployed.
 
-* implement input and output bindings for a function
-* implement function triggers by using data operations, timers, and webhooks
-* implement Azure Durable Functions
+### implement input and output bindings for a function
+### implement function triggers by using data operations, timers, and webhooks
+
+#### Webhook
+
+Creating a webhook trigger is pretty simple. Just start with an http trigger, and then on the source of the webhook add a webhook based on the event you want to cause a trigger. After that you can paste in the function url as the place that webhook should send data, and even add a function level secret to the webhook if you want.
+
+### implement Azure Durable Functions
