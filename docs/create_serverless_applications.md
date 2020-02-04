@@ -58,6 +58,19 @@ az functionapp create \
 When using this publish any functions already present are stopped and deleted before the new version is deployed.
 
 ### implement input and output bindings for a function
+
+Serverless drawbacks
+
+- [ ] Default timeout of 5 minutes, max timeout of 10
+- [ ] HTTP trigger and bindings restricted to 2.5 minutes
+- [ ] If continuous execution by multiple clients is expected vm might be better.
+
+Trigging a function using cURL
+https://escalator-functions-rab.azurewebsites.net/api/DriveGearTemperatureService?code=o54wtVcvEaVa4xBEGYdVoz4KC7KKQTjvwkw8/siBWAoKK7FrrVxGWw==
+```
+curl --header "Content-Type: application/json" --header "x-functions-key: o54wtVcvEaVa4xBEGYdVoz4KC7KKQTjvwkw8/siBWAoKK7FrrVxGWw==" --request POST --data "{\"name\": \"Azure Function\"}" https://escalator-functions-rab.azurewebsites.net/api/DriveGearTemperatureService
+```
+
 ### implement function triggers by using data operations, timers, and webhooks
 
 #### Webhook
@@ -65,3 +78,11 @@ When using this publish any functions already present are stopped and deleted be
 Creating a webhook trigger is pretty simple. Just start with an http trigger, and then on the source of the webhook add a webhook based on the event you want to cause a trigger. After that you can paste in the function url as the place that webhook should send data, and even add a function level secret to the webhook if you want.
 
 ### implement Azure Durable Functions
+
+Durable functions are a subset of azure functions that track more long running processes, and can have built in flows, such as escalation paths, timeouts and orchestration.
+
+They start with a Start function, that will kick off an orchestration function which will then kick off multiple activity functions.
+
+The orchestration function can have timeout, and escalation path logic, so if something is trying to get approved and it doesn’t get approved by a certain time, it can kick off an escalation function that will send an email to a manager or something.
+
+They aren’t installed by default, when creating a new function app you need to install the durable function tools using the advanced kudu feature.
