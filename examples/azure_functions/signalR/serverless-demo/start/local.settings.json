@@ -4,7 +4,7 @@
     "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=cloudshell1128492272;AccountKey=d8XcCub43mOr5YQkkMkbDyZoDxySRLX6+mEkPs6LkCnDwk/LgndF8xen2+g+UgaljXUa8xEsaWLNxr952xPhrg==",
     "AzureCosmosDBConnectionString": "AccountEndpoint=https://msl-sigr-cosmos-be707969a5.documents.azure.com:443/;AccountKey=gf3FUfPX6MS3l4xxYmbEUQuIrlFmeOaofqSzqbE52A8GCZQ1ZJjqdWlotW1LQzUtqOuzg5poQr0t0bV1jdf6QQ==;",
     "AzureCosmosDBMasterKey": "gf3FUfPX6MS3l4xxYmbEUQuIrlFmeOaofqSzqbE52A8GCZQ1ZJjqdWlotW1LQzUtqOuzg5poQr0t0bV1jdf6QQ==",
-    "AzureSignalRConnectionString": "<SIGNALR_CONNECTION_STRING>",
+    "AzureSignalRConnectionString": "Endpoint=https://msl-sigr-signalr4a17cc2c3a.service.signalr.net;AccessKey=/sMoSwGXVEHvpSOj74gAQ8FcY+BC02Wp5ZrLltEgeOw=;Version=1.0;",
     "FUNCTIONS_WORKER_RUNTIME": "node"
   },
   "Host" : {
