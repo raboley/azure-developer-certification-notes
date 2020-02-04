@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "restore": {
+    "Z:\\git\\azure-dev-certification-notes\\examples\\azure_functions\\HelloWorld\\HelloWorldTests\\HelloWorldTests.csproj": {}
+  },
+  "projects": {
+    "Z:\\git\\azure-dev-certification-notes\\examples\\azure_functions\\HelloWorld\\HelloWorldTests\\HelloWorldTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Z:\\git\\azure-dev-certification-notes\\examples\\azure_functions\\HelloWorld\\HelloWorldTests\\HelloWorldTests.csproj",
+        "projectName": "HelloWorldTests",
+        "projectPath": "Z:\\git\\azure-dev-certification-notes\\examples\\azure_functions\\HelloWorld\\HelloWorldTests\\HelloWorldTests.csproj",
+        "packagesPath": "C:\\Users\\russell.boley\\.nuget\\packages\\",
+        "outputPath": "Z:\\git\\azure-dev-certification-notes\\examples\\azure_functions\\HelloWorld\\HelloWorldTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\russell.boley\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "Z:\\git\\azure-dev-certification-notes\\examples\\azure_functions\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {
+                "projectPath": "Z:\\git\\azure-dev-certification-notes\\examples\\azure_functions\\HelloWorld\\HelloWorld\\HelloWorld.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Z:\\git\\azure-dev-certification-notes\\examples\\azure_functions\\HelloWorld\\HelloWorld\\HelloWorld.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Z:\\git\\azure-dev-certification-notes\\examples\\azure_functions\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+        "projectName": "HelloWorld",
+        "projectPath": "Z:\\git\\azure-dev-certification-notes\\examples\\azure_functions\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+        "packagesPath": "C:\\Users\\russell.boley\\.nuget\\packages\\",
+        "outputPath": "Z:\\git\\azure-dev-certification-notes\\examples\\azure_functions\\HelloWorld\\HelloWorld\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\russell.boley\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.NET.Sdk.Functions": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

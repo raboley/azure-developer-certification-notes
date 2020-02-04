@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/russell.boley/git/azure-dev-certification-notes/examples/azure_functions/c_sharp/WatchPortalFunction/WatchFunctionsTests/WatchFunctionsTests.csproj": {}
+  },
+  "projects": {
+    "/Users/russell.boley/git/azure-dev-certification-notes/examples/azure_functions/c_sharp/WatchPortalFunction/WatchFunctionsTests/WatchFunctionsTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/russell.boley/git/azure-dev-certification-notes/examples/azure_functions/c_sharp/WatchPortalFunction/WatchFunctionsTests/WatchFunctionsTests.csproj",
+        "projectName": "WatchFunctionsTests",
+        "projectPath": "/Users/russell.boley/git/azure-dev-certification-notes/examples/azure_functions/c_sharp/WatchPortalFunction/WatchFunctionsTests/WatchFunctionsTests.csproj",
+        "packagesPath": "/Users/russell.boley/.nuget/packages/",
+        "outputPath": "/Users/russell.boley/git/azure-dev-certification-notes/examples/azure_functions/c_sharp/WatchPortalFunction/WatchFunctionsTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/russell.boley/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/Users/russell.boley/git/azure-dev-certification-notes/examples/azure_functions/c_sharp/WatchPortalFunction/WatchPortalFunction/WatchPortalFunction.csproj": {
+                "projectPath": "/Users/russell.boley/git/azure-dev-certification-notes/examples/azure_functions/c_sharp/WatchPortalFunction/WatchPortalFunction/WatchPortalFunction.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/russell.boley/git/azure-dev-certification-notes/examples/azure_functions/c_sharp/WatchPortalFunction/WatchPortalFunction/WatchPortalFunction.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/russell.boley/git/azure-dev-certification-notes/examples/azure_functions/c_sharp/WatchPortalFunction/WatchPortalFunction/WatchPortalFunction.csproj",
+        "projectName": "WatchPortalFunction",
+        "projectPath": "/Users/russell.boley/git/azure-dev-certification-notes/examples/azure_functions/c_sharp/WatchPortalFunction/WatchPortalFunction/WatchPortalFunction.csproj",
+        "packagesPath": "/Users/russell.boley/.nuget/packages/",
+        "outputPath": "/Users/russell.boley/git/azure-dev-certification-notes/examples/azure_functions/c_sharp/WatchPortalFunction/WatchPortalFunction/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/russell.boley/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.NET.Sdk.Functions": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
