@@ -1,7 +1,8 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{97071A1A-513E-426D-83BC-2C24E1E2B804}|Default">
+  <MonoDevelop.Ide.ItemProperties.WatchFunctionsTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="WatchFunctionsTests/WatchFunctionUnitTests.cs">
     <Files>
-      <File FileName="WatchFunctionsTests/WatchFunctionUnitTests.cs" Line="1" Column="1" />
+      <File FileName="WatchFunctionsTests/WatchFunctionUnitTests.cs" Line="53" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
