@@ -26,13 +26,13 @@ namespace QueueApp
 
         }
 
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             
             if (args.Length > 0)
             {
                 string newsMessage = string.Join(" ", args);
-                SendArticleAsync(newsMessage).Wait();
+                await SendArticleAsync(newsMessage);
                 Console.WriteLine($"Sent: {newsMessage}");
             }
         }
