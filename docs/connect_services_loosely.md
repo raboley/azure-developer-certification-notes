@@ -3,9 +3,25 @@
 Learning objectives
 
 * Describe events and messages, and the challenges you can use them to solve in a distributed application.
+
+Events are small notifications that alert subscribers that something has happened. They don't expect any specific outcome of the subscriber when the message is published. They don't get sent with data, but might include a link to reference the relevant data. 
+
+Messages are sent with data and have an expected outcome of the subscriber of the data.
+
+These both can solve issues where applications aren't able to keep up with the load put upon them. It creates a buffer so that if the database or application aren't able to scale to meet demand, the events/queues handle messaging instead of the database hitting a deadlock causing all communication to go down.
+
 * Identify scenarios in which Storage queue is the best messaging technology for an application.
+
+Storage queue is the best tech when there is one to one relationship between publishers and subscribers, and the data sent over is a message. It should not have any need for lots of features like partitioning, or message styles like at most one, at least one, FIFO. It is the only choice if a message is larger than 80 MB.
+
 * Identify scenarios in which Event Grid is the best messaging technology for an application.
+
+Event grid is the best communication for simple communication between publishers and subscribers where a one at a time messaging style is ok. If there needs to be a fan out approach with lots of endpoints for subscribers, and if cost is a concern.
+
 * Identify scenarios in which Event Hubs is the best messaging technology for an application.
+
+Event hubs are the best if you are sending events that need to have high throughput, support for realtime data streams and/or batch processing and want enterprise level authentication. It is also good if you want to do analytics/aggregation of events, and can store all events in a data lake or blob storage for persistence.
+
 * Identify scenarios in which Service Bus is the best messaging technology for an application.
 
 ### Choosing Messages or events
