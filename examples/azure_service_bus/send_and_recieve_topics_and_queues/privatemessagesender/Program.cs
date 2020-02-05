@@ -24,13 +24,11 @@ namespace privatemessagesender
 
         static async Task SendSalesMessageAsync()
         {
-            // Create a Queue Client here
-            queueClient = QueueClient(ServiceBusConnectionString, QueueName);
+            queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
 
             // Send messages.
             try
             {
-                // Create and send a message here
                 string messageBody = $"$10,000 order for bicycle parts from retailer Adventure Works.";
                 var message = new Message(Encoding.UTF8.GetBytes(messageBody));
                 Console.WriteLine($"Sending message: {messageBody}");
@@ -43,7 +41,6 @@ namespace privatemessagesender
                 Console.WriteLine($"{DateTime.Now} :: Exception: {exception.Message}");
             }
 
-            // Close the connection to the queue here
             await queueClient.CloseAsync();
         }
     }

@@ -8,7 +8,7 @@ namespace performancemessagesender
 {
     class Program
     {
-        const string ServiceBusConnectionString = "";
+        const string ServiceBusConnectionString = "Endpoint=sb://pizzasalesrab.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xMBDJZkXCVpwmXZbOiurx+wRZVuKiH+UlBc92zNFpUI=";
         const string TopicName = "salesperformancemessages";
         static ITopicClient topicClient;
 
@@ -26,11 +26,18 @@ namespace performancemessagesender
         static async Task SendPerformanceMessageAsync()
         {
             // Create a Topic Client here
+            topicClient = new TopicClient(ServiceBusConnectionString, TopicName);
 
             // Send messages.
             try
             {
                 // Create and send a message here
+                string messageBody = $"Total sales for Brazil in August: $13m.";
+                var message = new Message(Encoding.UTF8.GetBytes(messageBody));
+                Console.WriteLine($"Sending message: {messageBody}");
+                await topicClient.SendAsync(message);
+
+
             }
             catch (Exception exception)
             {
@@ -38,6 +45,16 @@ namespace performancemessagesender
             }
 
             // Close the connection to the topic here
+            await topicClient.CloseAsync();
+
+            /* Check message count
+az servicebus topic subscription show \
+    --resource-group [sandbox resource group name] \
+    --namespace-name <namespace-name> \
+    --topic-name salesperformancemessages \
+    --name Americas \
+    --query messageCount
+            */
         }
     }
 }
