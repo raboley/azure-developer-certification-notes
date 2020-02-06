@@ -167,4 +167,6 @@ Now we can create a container to store messages in our storage account
 az storage container create -n messages --connection-string "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=rabeventstorage;AccountKey=T7b/yWPECiOmtaqg3ps5Osi0m3By7Cv/jtwB/ihi/SlVhw0xzpGSuV+srzpWPmAztmHespR+JsY9wIqskO6/Xw=="
 ```
 
+Next it is time to create a sender
+
 ### Evaluate Event Hub performance using the Azure portal.
