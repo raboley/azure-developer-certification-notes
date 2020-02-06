@@ -1,6 +1,10 @@
 create a storage account using the CLI
 
+Find the correct tenant to use for this example
+
+```
 az account list
+```
 
 az storage account create --name [unique-name] -g learn-aae3bdde-9365-44f8-a878-ae24f5089545 --kind StorageV2 --sku Standard_LRS
 
