@@ -12,9 +12,8 @@ namespace QueueApp
 
         static async Task SendArticleAsync(string newsMessage)
         {
-            CloudStorageAccount account = CloudStorageAccount.Parse(connectionString);
-            CloudQueueClient client = account.CreateCloudQueueClient();
-            CloudQueue queue = client.GetQueueReference("newsqueue");
+
+            CloudQueue queue = GetQueue();
             bool createdQueue = await queue.CreateIfNotExistsAsync();
             if (createdQueue)
             {
@@ -26,6 +25,33 @@ namespace QueueApp
 
         }
 
+        static CloudQueue GetQueue()
+        {
+            CloudStorageAccount account = CloudStorageAccount.Parse(connectionString);
+            CloudQueueClient client = account.CreateCloudQueueClient();
+            return client.GetQueueReference("newsqueue");
+        }
+
+        static async Task<string> ReceiveArticleAsync()
+        {
+         CloudQueue queue = GetQueue();
+         bool exists = await queue.ExistsAsync();
+         if (exists)
+         {
+             CloudQueueMessage retrievedArticle = await queue.GetMessageAsync();
+             if (retrievedArticle != null)
+             {
+                 string newsMessage = retrievedArticle.AsString;
+                 await queue.DeleteMessageAsync(retrievedArticle);
+                 return newsMessage;
+             }
+
+         }
+
+         return "<queue empty or not created>";
+
+        }
+
         static async Task Main(string[] args)
         {
             
@@ -34,6 +60,11 @@ namespace QueueApp
                 string newsMessage = string.Join(" ", args);
                 await SendArticleAsync(newsMessage);
                 Console.WriteLine($"Sent: {newsMessage}");
+            } 
+            else 
+            {
+                string newsMessage = await ReceiveArticleAsync();
+                Console.WriteLine($"Received: {newsMessage}");
             }
         }
     }
