@@ -70,14 +70,14 @@ Choose Service Bus queues if:
 * You need to group messages into transactions.
 * You want to receive messages without polling the queue.
 * You need to provide a role-based access model to the queues.
-* You need to handle messages larger than 64 KB but less than 256 KB.
-* Your queue size will not grow larger than 80 GB.
+* You need to handle messages larger than `64 KB` but less than `256 KB`.
+* Your queue size will not grow larger than `80 GB`.
 * You would like to be able to publish and consume batches of messages.
 
 Choose Queue storage if:
 
 * You need an audit trail of all messages that pass through the queue.
-* You expect the queue to exceed 80 GB in size.
+* You expect the queue to exceed `80 GB` in size.
 * You want to track progress for processing a message inside of the queue.
 
 ### Event Grid
