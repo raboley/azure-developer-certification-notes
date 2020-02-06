@@ -27,7 +27,7 @@ public class SimpleSend {
                 .setNamespaceName("rablabeventhub") // to target National clouds - use .setEndpoint(URI)
                 .setEventHubName("rablabhub")
                 .setSasKeyName("RootManageSharedAccessKey")
-                .setSasKey("T7b/yWPECiOmtaqg3ps5Osi0m3By7Cv/jtwB/ihi/SlVhw0xzpGSuV+srzpWPmAztmHespR+JsY9wIqskO6/Xw==");
+                .setSasKey("1dWMzR3qJnJYRCRQh/Q5otTyiFnshEAfJ9WvlQk4Ano=");
 
         final Gson gson = new GsonBuilder().create();
 
